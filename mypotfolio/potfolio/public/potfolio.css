@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 17px;
+    /* background-color: rgb(245, 245, 245); */
+}
+
+section {
+    width: 100%;
+    height: 800px;
+    float: left;
+}
+
+#pageA {
+    background: linear-gradient(white, white, gray);
+}
+
+#pageB {
+    /* background-image: url(js.jpeg); */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(245, 245, 245);
+}
+
+#pageE {
+    background-color: rgb(245, 245, 245);
+}
+
+#pageD {
+    background-color: rgb(245, 245, 245);
+}
+
+#pageC {
+    background-color: rgb(245, 245, 245);
+}
+
+#pageF {
+    background-image: url(ref.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    background-color: #c1c1c1;
+    height: 100px;
+    border-bottom: 1px solid gray;
+    margin-top: -80px;
+}
+
+ul {
+    list-style-type: none;
+    width: fit-content;
+    margin: auto;
+}
+
+ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+ul li a:hover {
+    /* background-color: white; */
+    color: white;
+    text-decoration: underline;
+    background-color: lightgray;
+}
+
+ul li a:active {
+    color: green;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #c1c1c1;
+}
+
+
+/* styling for contact */
+
+.labels {
+    float: left;
+    width: 26%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#all {
+    width: 70%;
+    margin: auto;
+    background-color: rgb(255, 255, 255)
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    margin-left: 0px;
+    margin-top: 105px;
+    font-style: initial;
+}
+
+.inputs {
+    padding: 7px;
+    border-radius: 3px;
+    width: 48%;
+    border: 1px solid #c1c1c1;
+}
+
+textarea {
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    font-weight: 550;
+    /* background-color: lightgray; */
+    border: 1px solid #c1c1c1;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: rgb(77, 125, 190);
+}
+
+.imags {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+}
+
+#under {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#social {
+    width: 7%;
+    margin-left: 440px
+}
+
+
+/* style for about me */
+
+#param {
+    line-height: 50px;
+}
+
+#containing {
+    width: 55%;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    width: 40%;
+    margin-top: 120px;
+    margin-right: 400px;
+}
+
+#imgs {
+    margin-top: 120px;
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+
+/* styling for reference */
+
+.details {
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    margin-top: 120px;
+    color: black;
+}
+
+.people {
+    margin-top: 30px;
+}
+
+
+/* styling for projects */
+
+#pageContent {
+    margin-top: 105px;
+}
+
+#leftDiv {
+    /* background-color: gray; */
+    float: left;
+    padding: 10px;
+    width: 31%;
+    margin-top: -23px;
+    border: 1px solid #c1c1c1;
+    height: 450px;
+}
+
+#middleDiv {
+    padding: 10px;
+    float: left;
+    width: 31%;
+    border: 1px solid #c1c1c1;
+    margin-top: -23px;
+    height: 450px;
+}
+
+#rightDiv {
+    margin-top: -23px;
+    float: right;
+    padding: 10px;
+    width: 33%;
+    border: 1px solid #c1c1c1;
+    height: 450px;
+}
+
+.projectImage {
+    width: 100%;
+    height: 200px;
+}
+
+#formVal {
+    width: 100%;
+    height: 265px;
+}
+
+.projectTexts {
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+
+.allProjs {
+    width: 99%;
+    margin: 2px;
+    margin: auto;
+}
+
+.link {
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+#h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* styling for skills */
+
+.firstdiv {
+    float: left;
+    width: 30%;
+}
+
+.seconddiv {
+    float: right;
+    width: 70%;
+    margin: 10px;
+    text-align: left;
+}
+
+#maincollector {
+    margin: 15px 6px 0 10px;
+}
+
+.Javascript {
+    margin-top: 85px;
+}
+
+.html {
+    margin-top: -30px;
+}
+
+
+/* styling for images */
+
+.gallery {
+    margin: 11px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    /* margin: 20px; */
+    background-color: rgb(255, 255, 255);
+}
+
+.gallery:hover {
+    color: red;
+    font-style: italic;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 200px;
+    height: 240px;
+}
+
+.content {
+    padding: 25px;
+    text-align: center;
+}
+
+.collecting {
+    margin-top: 105px;
+}
+
+#onel {
+    float: left;
+    width: 35%;
+}
+
+#oner {
+    float: right;
+    width: 65%;
+    margin-right: 100px;
+    margin-top: -380px;
+}
+
+#hr {
+    width: 45%;
+    margin-left: 260px;
+}

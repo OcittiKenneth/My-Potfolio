@@ -44,6 +44,8 @@ app.post('/mydetatils', urlencodedParser, (req, res) => {
     connection.query(querystring, [name, email, subject, textarea]);
     connection.end();
 
+
+    //ending responce
     console.log("form is posted to database");
     res.end();
 

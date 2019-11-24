@@ -44,6 +44,8 @@ app.post('/mydetatils', urlencodedParser, (req, res) => {
     connection.query(querystring, [name, email, subject, textarea]);
     connection.end();
 
+
+    //ending responce
     console.log("form is posted to database");
     res.end();
 
@@ -54,6 +56,7 @@ app.get('/index', (req, res) => {
     res.sendFile(html__dir + "index.html");
 });
 
-// port for handling request
+// port for handling request for my potfolio
+//listning on port 3000
 app.listen(3000);
 console.log("server started at port 3000");

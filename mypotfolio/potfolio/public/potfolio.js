@@ -1,7 +1,4 @@
 const validate = (event) => {
-
-    // console.log("yap.....");
-
     // name
     const nameInput = document.querySelector(".name");
     const reName = /^[A-Za-z\s]+$/;

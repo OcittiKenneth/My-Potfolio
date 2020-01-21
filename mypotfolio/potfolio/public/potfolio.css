@@ -1,27 +1,116 @@
 /* stylig for body */
 
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 3%;
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    margin-right: 50px;
+    border-radius: 10px;
+    /* margin-top: -50px; */
+    transform-origin: center center;
+    /* transform: scale(1); */
+    transition: transform 0.8s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  .slider > a {
+    display: inline-flex;
+    width: 1.9rem;
+    height: 1.9rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    /* margin-top: 20%; */
+  }
+  .slider > a:focus {
+    background: #000;
+    /* margin-top: 20px; */
+  }
+
+
+  @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
+  }
+
+  .img22:hover {
+border: 1px solid red;
+border-radius: 3px;
+  }
+
+
+
+
+
+
+
+.thisarea{
+    margin-top:  -85px;;
+    height: 750px;
+}
+.ociti{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ociti1{
+    width: 10%;
+    position: fixed;
+}
+.ociti2{
+    width: 90%;
+    margin-left: 10%;
+}
 * {
     margin: 0;
     padding: 0;
-    font-family: arial;
-    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 section {
     width: 100%;
     height: 800px;
     float: left;
-}
-
-#pageA {
-    background: linear-gradient(white, white, gray);
-}
-
-#pageB {
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgb(245, 245, 245);
 }
 
 #pageE {
@@ -33,7 +122,8 @@ section {
 }
 
 #pageC {
-    background-color: rgb(245, 245, 245);
+    width: 98%;
+    margin-left: 2%;
 }
 
 #pageF {
@@ -42,33 +132,91 @@ section {
     background-position: center;
     background-size: cover;
 }
+#pageG{
+    background-color: darkgray;
+}
 
 nav {
-    width: 100%;
+    background-color:#283E4A;
+    height: 100%;
+    padding: 10px;
+    width: 9.5%;
     position: fixed;
-    z-index: 1;
-    top: 80px;
-    background-color: #c1c1c1;
-    height: 100px;
-    border-bottom: 1px solid gray;
-    margin-top: -80px;
+
+}
+ul li a{
+    padding: 3px;
+    margin-top: 20px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: .4s;
 }
 
-ul {
-    list-style-type: none;
-    width: fit-content;
-    margin: auto;
+ul li:hover a {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: lightgray;
 }
+
+.boldedtext{
+    color: black;
+    font-weight: bold   ;
+}
+/* progress bars */
+.myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 50%;
+    height: 20px;
+    background-color: rgb(224, 63, 63);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  #myBar1 {
+    width: 85%;
+    height: 20px;
+    background-color: rgb(224, 63, 63);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  #myBar2 {
+    width: 90%;
+    height: 20px;
+    background-color: rgb(224, 63, 63);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  #myBar3 {
+    width: 60%;
+    height: 20px;
+    background-color: rgb(224, 63, 63);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  #myBar4 {
+    width: 75%;
+    height: 20px;
+    background-color: rgb(224, 63, 63);
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
 
 ul li {
     float: left;
-    margin-right: 30px;
-}
-
-ul li a:hover {
-    color: white;
-    text-decoration: underline;
-    background-color: lightgray;
 }
 
 ul li a:active {
@@ -78,7 +226,6 @@ ul li a:active {
 ul li a {
     text-decoration: none;
     font-size: 20px;
-    background-color: #c1c1c1;
 }
 
 
@@ -108,7 +255,7 @@ h1 {
 .inputs {
     padding: 7px;
     border-radius: 3px;
-    width: 48%;
+    width: 50%;
     border: 1px solid #c1c1c1;
 }
 
@@ -145,25 +292,32 @@ input[type=submit] {
 /* style for about me */
 
 #param {
-    line-height: 50px;
+    line-height: 2.5rem;
 }
-
+#background {
+    position: relative;
+    right: 0;
+    overflow: auto;
+    color: red;
+    font-size: 50px;
+ }
+ 
 #containing {
-    width: 55%;
     color: green;
     font-family: 'Courier New', Courier, monospace;
     float: right;
-    width: 40%;
-    margin-top: 120px;
-    margin-right: 400px;
+    width: 53%;
+    margin-top:10% ;
+    margin-right: 60px;
+    position: relative;
 }
 
 #imgs {
     margin-top: 120px;
     float: left;
-    width: 20%;
-    height: 420px;
-    margin-left: 10px;
+    width: 36%;
+    height: 600px;
+    margin-left: 40px;
 }
 
 
@@ -175,6 +329,7 @@ input[type=submit] {
     margin: auto;
     margin-top: 120px;
     color: black;
+    margin-left: 3%;
 }
 
 .people {
@@ -187,47 +342,13 @@ input[type=submit] {
 #pageContent {
     margin-top: 105px;
 }
-
-#leftDiv {
-    float: left;
-    padding: 10px;
-    width: 31%;
-    margin-top: -23px;
-    border: 1px solid #c1c1c1;
-    height: 450px;
-}
-
-#middleDiv {
-    padding: 10px;
-    float: left;
-    width: 31%;
-    border: 1px solid #c1c1c1;
-    margin-top: -23px;
-    height: 450px;
-}
-
-#rightDiv {
-    margin-top: -23px;
-    float: right;
-    padding: 10px;
-    width: 33%;
-    border: 1px solid #c1c1c1;
-    height: 450px;
-}
-
 .projectImage {
     width: 100%;
-    height: 200px;
+    height: 100px;
 }
-
-#formVal {
-    width: 100%;
-    height: 265px;
-}
-
 .projectTexts {
     line-height: 1.5em;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .allProjs {
@@ -280,21 +401,18 @@ input[type=submit] {
     margin: 11px;
     border: 1px solid #ccc;
     float: left;
-    width: 200px;
+    width: 250px;
     background-color: rgb(255, 255, 255);
 }
 
 .gallery:hover {
     color: red;
     font-style: italic;
-}
-
-.gallery:hover {
     border: 1px solid #777;
 }
 
 .gallery img {
-    width: 200px;
+    width: 250px;
     height: 240px;
 }
 
@@ -305,6 +423,7 @@ input[type=submit] {
 
 .collecting {
     margin-top: 105px;
+    margin-left: 4.5%;
 }
 
 #onel {

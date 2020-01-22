@@ -455,3 +455,17 @@ input[type=submit] {
     width: 45%;
     margin-left: 260px;
 }
+#span1{
+    color:rgb(0,0,0);
+     font-weight: bolder;
+     color: red; 
+     font-size: 20px;
+}
+#start_here{
+    padding: 11px; 
+    font-size: 15px;
+    text-decoration: none; 
+    background-color: red; 
+    border: none;
+    border-radius: 3px;
+}

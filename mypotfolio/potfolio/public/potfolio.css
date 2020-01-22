@@ -119,7 +119,10 @@ section {
 
 #pageD {
     background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
+
 }
+
 
 #pageC {
     width: 98%;
@@ -175,41 +178,49 @@ ul li:hover a {
   }
   
   #myBar {
-    width: 50%;
+    width: 75%;
     height: 20px;
-    background-color: rgb(224, 63, 63);
+    background-color: red;
     text-align: center;
     line-height: 20px;
     color: white;
   }
   #myBar1 {
-    width: 85%;
+    width: 71%;
     height: 20px;
-    background-color: rgb(224, 63, 63);
+    background-color: red;
     text-align: center;
     line-height: 20px;
     color: white;
   }
   #myBar2 {
-    width: 90%;
+    width: 80%;
     height: 20px;
-    background-color: rgb(224, 63, 63);
+    background-color: red;
     text-align: center;
     line-height: 20px;
     color: white;
   }
   #myBar3 {
-    width: 60%;
+    width: 65%;
     height: 20px;
-    background-color: rgb(224, 63, 63);
+    background-color: red;
     text-align: center;
     line-height: 20px;
     color: white;
   }
   #myBar4 {
-    width: 75%;
+    width: 90%;
     height: 20px;
-    background-color: rgb(224, 63, 63);
+    background-color: red;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  #myBar5 {
+    width: 90%;
+    height: 20px;
+    background-color: red;
     text-align: center;
     line-height: 20px;
     color: white;
@@ -303,7 +314,6 @@ input[type=submit] {
  }
  
 #containing {
-    color: green;
     font-family: 'Courier New', Courier, monospace;
     float: right;
     width: 53%;

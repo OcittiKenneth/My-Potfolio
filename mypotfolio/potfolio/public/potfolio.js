@@ -28,7 +28,7 @@ const validate = (event) => {
     const subject = document.getElementById("subject");
     const reSubject = /^[A-Za-z\s]+$/;
     if (!reSubject.test(subject.value)) {
-        document.getElementById("subId").innerHTML = "Put the subject please";
+        document.getElementById("subId").innerHTML = "Subject Required";
         subject.style.border = "1px solid red";;
     } else {
         document.getElementById("subId").innerHTML = "";
